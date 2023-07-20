@@ -1,3 +1,4 @@
+import 'package:book_tickets_app/screens/bottom_bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,7 +8,7 @@ void main() {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const BottomBar(),
       debugShowCheckedModeBanner: false,
     ),
   );
