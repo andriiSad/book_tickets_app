@@ -52,12 +52,10 @@ class TicketView extends StatelessWidget {
                                 builder: (context, constraints) {
                                   return Flex(
                                     direction: Axis.horizontal,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     mainAxisSize: MainAxisSize.max,
                                     children: List.generate(
-                                      (constraints.constrainWidth() / 6)
-                                          .floor(),
+                                      (constraints.constrainWidth() / 6).floor(),
                                       (index) => const SizedBox(
                                         width: 3,
                                         height: 1,
@@ -128,14 +126,14 @@ class TicketView extends StatelessWidget {
                 ],
               ),
             ),
-            //showing the orange part of the ticket
+            //showing the middle part of the ticket
             Container(
               color: Styles.orangeColor,
               child: Row(
                 children: [
                   SizedBox(
                     height: AppLayout.getHeight(20),
-                    width: AppLayout.getWidth(20),
+                    width: AppLayout.getWidth(10),
                     child: DecoratedBox(
                       decoration: BoxDecoration(
                         color: Colors.white,
